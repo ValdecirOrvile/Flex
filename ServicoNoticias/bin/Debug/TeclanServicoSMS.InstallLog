@@ -1,0 +1,13 @@
+﻿Instalando o assembly 'C:\Trabalho\Repositorio\CSharp_Unified_Applications\TeclanServicoSMS\bin\Debug\TeclanServicoSMS.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Trabalho\Repositorio\CSharp_Unified_Applications\TeclanServicoSMS\bin\Debug\TeclanServicoSMS.exe
+   logfile = C:\Trabalho\Repositorio\CSharp_Unified_Applications\TeclanServicoSMS\bin\Debug\TeclanServicoSMS.InstallLog
+Instalando o serviço Teclan Serviço Sms...
+Serviço Teclan Serviço Sms foi instalado com êxito.
+Criando a origem de EventLog Teclan Serviço Sms no log Application...
+Confirmando o assembly 'C:\Trabalho\Repositorio\CSharp_Unified_Applications\TeclanServicoSMS\bin\Debug\TeclanServicoSMS.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Trabalho\Repositorio\CSharp_Unified_Applications\TeclanServicoSMS\bin\Debug\TeclanServicoSMS.exe
+   logfile = C:\Trabalho\Repositorio\CSharp_Unified_Applications\TeclanServicoSMS\bin\Debug\TeclanServicoSMS.InstallLog

@@ -1,0 +1,11 @@
+- Serviço escrito em C# (escuta a porta 11201)
+- O banco de dados utilizado no projeto foi MySQL
+- Aplicação das telas feitas em extjs sencha
+
+Obs.: 
+- O serviço e a aplicação das telas devem ser executado na mesma máquina.
+- Acesso ao banco de dados via odbc (configurar o odbc no arquivo App.config do serviço).
+
+
+Qualquer duvida ligar ou mandar mensagem para 48 991402948 (Valdecir)
+

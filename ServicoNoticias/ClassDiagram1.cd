@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="MODEL">
+    <Position X="20.469" Y="1.698" Height="0.291" Width="0.7" />
+  </Comment>
+  <Comment CommentText="DAO">
+    <Position X="20.521" Y="2.896" Height="0.291" Width="0.7" />
+  </Comment>
+  <Comment CommentText="BOUNDARY VIEW">
+    <Position X="2.393" Y="1.104" Height="0.291" Width="1.221" />
+  </Comment>
+  <Comment CommentText="CONTROLLER">
+    <Position X="21.57" Y="4.353" Height="0.323" Width="1.002" />
+  </Comment>
+  <Comment CommentText="VIEW">
+    <Position X="21.443" Y="5.899" Height="0.323" Width="0.7" />
+  </Comment>
+  <Comment CommentText="Socket Client">
+    <Position X="0.534" Y="2.861" Height="0.291" Width="1.131" />
+  </Comment>
+  <Comment CommentText="Observable X    Observer">
+    <Position X="3.959" Y="5.554" Height="0.635" Width="0.839" />
+  </Comment>
+  <Class Name="Dashboard_Backend.DAOs.DAOQueue" Collapsed="true">
+    <Position X="5.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAEAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DAOs\DAOQueue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dashboard_Backend.DAOs.DAOAgent" Collapsed="true">
+    <Position X="9.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DAOs\DAOAgent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dashboard_Backend.DAOs.DAOCampaign" Collapsed="true">
+    <Position X="13.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DAOs\DAOCampaign.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CampaignWindowData" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Dashboard_Backend.DAOs.DAOCall" Collapsed="true">
+    <Position X="17.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DAOs\DAOCall.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dashboard_Backend.Controllers.ControllerQueue" Collapsed="true">
+    <Position X="5.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEIAAAAAAAAAQAAAAIAAAAgABCAAAEA=</HashCode>
+      <FileName>Controllers\ControllerQueue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dashboard_Backend.Controllers.ControllerAgent" Collapsed="true">
+    <Position X="9.75" Y="4.25" Width="1.5" />
+    <AssociationLine Name="DAOAgent" Type="Dashboard_Backend.DAOs.DAOAgent">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.058" Y="0.466" Height="0.182" Width="0.899" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\ControllerAgent.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="DAOAgent" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Dashboard_Backend.Controllers.ControllerCampaign" Collapsed="true">
+    <Position X="13.5" Y="4.25" Width="1.5" />
+    <AssociationLine Name="DAOCampaign" Type="Dashboard_Backend.DAOs.DAOCampaign">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.079" Y="0.456" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAE=</HashCode>
+      <FileName>Controllers\ControllerCampaign.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="DAOCampaign" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Dashboard_Backend.Controllers.ControllerCall" Collapsed="true">
+    <Position X="17.5" Y="4.25" Width="1.5" />
+    <AssociationLine Name="DAOCall" Type="Dashboard_Backend.DAOs.DAOCall">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.079" Y="0.445" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\ControllerCall.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="DAOCall" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Dashboard_Backend.CampaignWindowData" Collapsed="true">
+    <Position X="12.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\CampaignWindowData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dashboard_Backend.Boundaries.DialerDataConsumer" Collapsed="true">
+    <Position X="2.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAABAAEAAAEAUECAAEgAAAAAAAAAQAAEAAAiAAAAAA=</HashCode>
+      <FileName>Boundaries\DialerDataConsumer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Dashboard_Backend.Boundaries.SocketServer" Collapsed="true">
+    <Position X="2.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABgAAAAgACgEAEAIBAAAAAAAAAAAAAAAAAQAAIAAAAA=</HashCode>
+      <FileName>Boundaries\SocketServer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dashboard_Backend.Boundaries.SocketDialer" Collapsed="true">
+    <Position X="2.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAgAIAAAGgICCAAAMAAAAAAAAAQAAAAQAAgAEA=</HashCode>
+      <FileName>Boundaries\SocketDialer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dashboard_Backend.Models.AgentWindowData" Collapsed="true">
+    <Position X="8.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\AgentWindowData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dashboard_Backend.Models.Agent" Collapsed="true">
+    <Position X="10.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAACkAAABAAAAQAAAAQQIQAFAAAAAAIAAgABEBAA=</HashCode>
+      <FileName>Models\Agente.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dashboard_Backend.Views.ViewQueue" Collapsed="true">
+    <Position X="5.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAgAAAAA=</HashCode>
+      <FileName>Views\ViewQueue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dashboard_Backend.Views.ViewAgent" Collapsed="true">
+    <Position X="9.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ViewAgent.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Dashboard_Backend.Models.Campaign" Collapsed="true">
+    <Position X="14.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Campanha.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dashboard_Backend.Models.CallWindowData" Collapsed="true">
+    <Position X="16.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\CallWindowData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dashboard_Backend.Models.Call" Collapsed="true">
+    <Position X="18.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Call.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dashboard_Backend.Views.ViewCampaign" Collapsed="true">
+    <Position X="13.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ViewCampaign.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Dashboard_Backend.Views.ViewCall" Collapsed="true">
+    <Position X="17.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ViewCall.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Dashboard_Backend.Boundaries.IDataConsumer" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAQEAAAEAAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Boundaries\IDataConsumer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Dashboard_Backend.Controllers.InterfaceController" Collapsed="true">
+    <Position X="19.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\InterfaceController.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Dashboard_Backend.Views.InterfaceView" Collapsed="true">
+    <Position X="19.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\InterfaceView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
